@@ -59,17 +59,18 @@ const BodyComponent = () => {
                     </div>
 
                 </div>
-                <div className='mt-3'>
+                <div className='mt-6 hover:my-10 group hover:cursor-zoom-in relative'>
                     <Image
                         src="/images/img.png"
                         alt="image"
-                        className="rounded-lg "
-                        width={900} height={600}
+                        className="rounded-lg transition-transform duration-700 ease-in-out transform group-hover:scale-110"
+                        width={900}
+                        height={600}
                         objectFit="cover"
-                        quality={100}
                     />
+
                 </div>
-            </div>
+            </div >
 
             <PopUp open={open} onCancel={handleCancel} />
         </>

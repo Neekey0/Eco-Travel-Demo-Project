@@ -37,10 +37,18 @@ const Header = () => {
         router.push("/Blogs");
 
     }
+    const handleExploreClick = () => {
+        router.push("/Explore");
+    }
+
+    const handleClick = () => {
+        router.push("/");
+    }
+
     return (
         <>
             <div className="mt-2 flex flex-row justify-evenly items-center font-medium">
-                <p className='font-serif font-semibold  text-xl hover:cursor-wait '>Dribble</p>
+                <div className='font-serif font-semibold  text-xl hover:cursor-pointe ' onClick={handleClick}>Dribble</div>
                 <div className="w-1/3 border-2 border-slate-200 p-2 rounded-full font-thin px-4 py-2 text-sm bg-slate-100 hover:bg-white flex justify-between items-center">
 
                     {/* <span className="opacity-4 text-sm  hover:cursor-pointer" onChange={handleChange}>What are you looking for?</span> */}
@@ -52,14 +60,14 @@ const Header = () => {
                         value={Param}
                         onChange={handleChange}
                     />
-                    <p className="font-semibold text-slate-700 hover:cursor-pointer hover:text-slate-600">Shots <DownOutlined />
+                    <div className="font-semibold text-slate-700 hover:cursor-pointer hover:text-slate-600">Shots <DownOutlined />
                         <span className="bg-pink-600 p-2 rounded-full inline-flex items-center ml-2">
                             <IoSearch />
                         </span>
-                    </p>
+                    </div>
 
                 </div>
-                <p className="font-serif hover:cursor-pointer hover:text-slate-700">Explore</p>
+                <div className="font-serif hover:cursor-pointer hover:text-slate-700" onClick={handleExploreClick}>Explore</div>
 
                 <div className="font-serif hover:cursor-pointer hover:text-slate-700">
                     <Menu
@@ -90,10 +98,10 @@ const Header = () => {
                         </MenuList>
                     </Menu>
                 </div>
-                <p className="font-serif hover:cursor-pointer hover:text-slate-700">Find Jobs</p>
-                <p className="font-serif hover:cursor-pointer hover:text-slate-700" onClick={handleBlogClick}>Blogs</p>
-                <p className="font-serif hover:cursor-pointer hover:text-slate-700">Sign up</p>
-                <p className='border rounded-full p-3 px-6 bg-slate-900 text-white hover:cursor-pointer' onClick={handleLogIn}>Log In</p>
+                <div className="font-serif hover:cursor-pointer hover:text-slate-700">Find Jobs</div>
+                <div className="font-serif hover:cursor-pointer hover:text-slate-700" onClick={handleBlogClick}>Blogs</div>
+                <div className="font-serif hover:cursor-pointer hover:text-slate-700">Sign up</div>
+                <div className='border rounded-full p-3 px-6 bg-slate-900 text-white hover:cursor-pointer' onClick={handleLogIn}>Log In</div>
             </div >
             <PopUp open={open} onCancel={handleCancel} />
         </>

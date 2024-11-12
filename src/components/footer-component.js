@@ -6,33 +6,33 @@ const Footer = () => {
     return (
         <>
             <div className='flex flex-row justify-evenly'>
-                <p className='font-serif font-semibold  text-xl'>Dribble</p>
-                <p className='text-sm font-medium'>
+                <div className='font-serif font-semibold  text-xl'>Dribble</div>
+                <div className='text-sm font-medium'>
                     For Designers
-                </p>
-                <p className='text-sm font-medium hover:cursor-pointer hover:text-slate-600 '>
-                    Hire Talent
-                </p>
-                <p className='text-sm font-medium hover:cursor-pointer hover:text-slate-600'>
-                    Inspiration
-                </p>
-                <p className='text-sm font-medium hover:cursor-pointer hover:text-slate-600'>
-                    Advertising
-                </p>
-                <p className='text-sm font-medium hover:cursor-pointer hover:text-slate-600' >Blog
-                </p>
-                <p className='text-sm font-medium hover:cursor-pointer hover:text-slate-600'>About
-                </p>
-
-                <p className='text-sm font-medium hover:cursor-pointer hover:text-slate-600'>Careers</p>
-                <p className='text-sm font-medium hover:cursor-pointer hover:text-slate-600'>Support</p>
-                <div className='flex flex-row justify-around'>
-                    <p className='mr-2 hover:cursor-pointer hover:text-slate-600'><FaTwitter /></p>
-                    <p className='mr-2 hover:cursor-pointer hover:text-slate-600'> <FaInstagram /> </p>
-                    <p className='mr-2 hover:cursor-pointer hover:text-slate-600'> <FaFacebook /> </p>
-                    <p className='hover:cursor-pointer hover:text-slate-600'> <FaPinterestP /></p>
                 </div>
-            </div>
+                <div className='text-sm font-medium hover:cursor-pointer hover:text-slate-600 '>
+                    Hire Talent
+                </div>
+                <div className='text-sm font-medium hover:cursor-pointer hover:text-slate-600'>
+                    Inspiration
+                </div>
+                <div className='text-sm font-medium hover:cursor-pointer hover:text-slate-600'>
+                    Advertising
+                </div>
+                <div className='text-sm font-medium hover:cursor-pointer hover:text-slate-600' >Blog
+                </div>
+                <div className='text-sm font-medium hover:cursor-pointer hover:text-slate-600'>About
+                </div>
+
+                <div className='text-sm font-medium hover:cursor-pointer hover:text-slate-600'>Careers</div>
+                <div className='text-sm font-medium hover:cursor-pointer hover:text-slate-600'>Support</div>
+                <div className='flex flex-row justify-around'>
+                    <div className='mr-2 hover:cursor-pointer hover:text-slate-600'><FaTwitter /></div>
+                    <div className='mr-2 hover:cursor-pointer hover:text-slate-600'> <FaInstagram /> </div>
+                    <div className='mr-2 hover:cursor-pointer hover:text-slate-600'> <FaFacebook /> </div>
+                    <div className='hover:cursor-pointer hover:text-slate-600'> <FaPinterestP /></div>
+                </div >
+            </div >
         </>
     )
 }
